@@ -3,7 +3,7 @@
 import pytest
 from flight_calculator import calculate_flight_time
 
-def test_calculate_flight_time_positive_weight():
+def test_calculate_flight_time_typical_payload():
     # Test with a positive weight
     assert calculate_flight_time(1000) == 180 - (0.1 * 1000)
 
